@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+        nats:
+                image: nats:alpine
+
+networks:
+  default:
+    external:
+      name: zoa-network
+
