@@ -1,6 +1,6 @@
 const NATS = require('nats')
 
-const servers = ["http://34.87.29.200:4222"  ]
+const servers = ["http://x.x.x.x:4222"  ]
 const nc = NATS.connect({servers: servers})
 nc.subscribe('zoa-v2', (err, m) => {
     if (err) {
